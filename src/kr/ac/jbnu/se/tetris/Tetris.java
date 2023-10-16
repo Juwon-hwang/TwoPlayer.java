@@ -10,7 +10,7 @@ public class Tetris extends JFrame {
 
 	public Tetris() {
 
-		statusbar = new JLabel(" 0");
+		statusbar = new JLabel(" ");
 		add(statusbar, BorderLayout.SOUTH);
 
 		// 메인 게임 보드 생성 및 추가

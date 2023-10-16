@@ -12,6 +12,7 @@ public class SettingsFrame extends JFrame implements ActionListener {
     MainMenu mainMenu;
     private SoundManager backgroundMusic;
     private JSlider volumeSlider; // 볼륨 조절 슬라이더 추가
+    private String id;
 
     public SettingsFrame(){
         //frame setup
@@ -61,7 +62,7 @@ public class SettingsFrame extends JFrame implements ActionListener {
 
         // goes back to MainMenu when button back is pressed
         if (e.getSource() == backButton){
-            mainMenu = new MainMenu();
+            mainMenu = new MainMenu(id);
             this.setVisible(false);
             mainMenu.setVisible(true);
             backgroundMusic.stop();

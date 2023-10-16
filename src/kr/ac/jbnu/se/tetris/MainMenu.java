@@ -16,7 +16,7 @@ public class MainMenu extends JFrame implements ActionListener {
     JButton scoreboardButton;
     JButton aboutButton, settingsButton;
 
-    public MainMenu() {
+    public MainMenu(String id) {
         this.setTitle("Tetris");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(900, 700);
